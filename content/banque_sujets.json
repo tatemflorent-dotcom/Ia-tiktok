@@ -1,0 +1,662 @@
+[
+  {
+    "id": "windows-historique-presse-papiers",
+    "sujet": "L'historique du presse-papiers de Windows (Windows + V)",
+    "hook": "Tu copies-colles encore *une* *seule* chose à la fois ?",
+    "segments": [
+      {
+        "text": "Sur Windows 10 et 11, il existe un *historique* du *presse-papiers* intégré, et franchement, presque personne ne l'utilise au quotidien.",
+        "scene": {
+          "type": "text",
+          "emoji": "📋",
+          "title": "L'*historique* du *presse-papiers*",
+          "subtitle": "Windows 10 et 11"
+        }
+      },
+      {
+        "text": "Appuie en même temps sur *Windows* plus *V*. La toute première fois, Windows te propose de l'activer : clique simplement sur Activer.",
+        "scene": {
+          "type": "shortcut",
+          "keys": [
+            "⊞ Win",
+            "V"
+          ],
+          "label": "Puis clique sur « Activer »"
+        }
+      },
+      {
+        "text": "À partir de là, Windows garde en mémoire les derniers éléments que tu copies, jusqu'à *25*, du texte, des liens et même des *images*.",
+        "scene": {
+          "type": "stat",
+          "value": 25,
+          "label": "éléments gardés en mémoire"
+        }
+      },
+      {
+        "text": "Tu refais Windows plus V, tu choisis l'élément dans la liste, et il se colle *directement* là où se trouve ton curseur, en une seconde.",
+        "scene": {
+          "type": "screenshot",
+          "app": "Presse-papiers",
+          "url": "Windows + V",
+          "lines": [
+            "📎 https://exemple.fr/article",
+            "✉️ Merci pour ton retour, je regarde ça",
+            "🖼️ Capture d'écran 14:32"
+          ]
+        }
+      },
+      {
+        "text": "Astuce bonus : *épingle* les éléments que tu utilises souvent. Ils restent disponibles même après un *redémarrage*, contrairement aux autres.",
+        "scene": {
+          "type": "text",
+          "emoji": "📌",
+          "title": "*Épingle* tes favoris",
+          "subtitle": "Ils survivent au redémarrage"
+        }
+      },
+      {
+        "text": "Et si tu veux tout vider d'un coup, va simplement dans Paramètres, Système, Presse-papiers, puis clique sur *Effacer*.",
+        "scene": {
+          "type": "steps",
+          "title": "Tout effacer",
+          "items": [
+            "Paramètres",
+            "Système › Presse-papiers",
+            "Effacer"
+          ]
+        }
+      },
+      {
+        "text": "Dernier bonus : avec ton *compte* *Microsoft*, tu peux même *synchroniser* ton presse-papiers entre plusieurs PC, dans ces mêmes paramètres.",
+        "scene": {
+          "type": "text",
+          "emoji": "🔄",
+          "title": "*Synchronise* tes PC",
+          "subtitle": "Avec ton compte Microsoft"
+        }
+      },
+      {
+        "text": "Abonne-toi pour une astuce tech chaque jour, et dis-moi en commentaire quel raccourci tu veux découvrir.",
+        "scene": {
+          "type": "text",
+          "emoji": "🚀",
+          "title": "Abonne-toi pour la *suite*"
+        }
+      }
+    ],
+    "legende": "Le raccourci Windows que presque personne n'utilise… et qui change tout pour le copier-coller 📋",
+    "hashtags": [
+      "#astucewindows",
+      "#windows11",
+      "#raccourciclavier",
+      "#astucetech",
+      "#productivite",
+      "#pc",
+      "#techtok"
+    ],
+    "a_verifier": [
+      "L'historique du presse-papiers (Windows + V) existe sur Windows 10 (depuis la version 1809) et Windows 11.",
+      "Au premier appui sur Windows + V, Windows propose de l'activer (bouton « Activer »).",
+      "L'historique conserve jusqu'à 25 éléments.",
+      "Types pris en charge : texte, HTML (liens) et images (bitmaps de moins de 4 Mo).",
+      "Les éléments épinglés sont conservés après un redémarrage, les autres sont effacés.",
+      "Chemin : Paramètres > Système > Presse-papiers > Effacer.",
+      "La synchronisation entre appareils nécessite un compte Microsoft et se règle dans Paramètres > Système > Presse-papiers."
+    ]
+  },
+  {
+    "id": "rouvrir-onglet-ferme-ctrl-maj-t",
+    "sujet": "Rouvrir un onglet fermé par erreur (Ctrl + Maj + T)",
+    "hook": "Tu as fermé un onglet *par* *erreur* ? Pas de panique.",
+    "segments": [
+      {
+        "text": "Il existe un raccourci que presque personne ne connaît, et il fonctionne dans *Chrome*, *Firefox*, *Edge* et la plupart des navigateurs.",
+        "scene": {
+          "type": "text",
+          "emoji": "😱",
+          "title": "L'onglet fermé *par erreur*",
+          "subtitle": "Chrome · Firefox · Edge"
+        }
+      },
+      {
+        "text": "Appuie en même temps sur *Contrôle*, *Majuscule* et *T* : ton dernier onglet fermé se rouvre instantanément, exactement sur la même page.",
+        "scene": {
+          "type": "shortcut",
+          "keys": [
+            "Ctrl",
+            "Maj",
+            "T"
+          ],
+          "label": "Le dernier onglet fermé revient"
+        }
+      },
+      {
+        "text": "Et tu peux recommencer : chaque nouvel appui rouvre l'onglet fermé juste avant, dans l'ordre inverse, comme une vraie *machine* à remonter le temps.",
+        "scene": {
+          "type": "steps",
+          "title": "Appuie plusieurs fois",
+          "items": [
+            "1er appui : le dernier onglet",
+            "2e appui : celui d'avant",
+            "Et ainsi de suite"
+          ]
+        }
+      },
+      {
+        "text": "Encore mieux, dans Chrome et Edge : si tu as fermé une *fenêtre* entière, le même raccourci la rouvre avec tous ses onglets.",
+        "scene": {
+          "type": "text",
+          "emoji": "🪟",
+          "title": "Même une *fenêtre* entière",
+          "subtitle": "Dans Chrome et Edge"
+        }
+      },
+      {
+        "text": "Sur *Mac*, c'est pareil avec Commande, Majuscule et T. Le réflexe est identique, seule la première touche change.",
+        "scene": {
+          "type": "shortcut",
+          "keys": [
+            "⌘ Cmd",
+            "Maj",
+            "T"
+          ],
+          "label": "La même chose sur Mac"
+        }
+      },
+      {
+        "text": "Si l'onglet est plus ancien, ouvre l'*historique* avec Contrôle H : tu retrouves toutes les pages visitées, classées par date et par heure.",
+        "scene": {
+          "type": "screenshot",
+          "app": "Historique",
+          "url": "Ctrl + H",
+          "lines": [
+            "🕘 Aujourd'hui · 14:32 — Recette facile",
+            "🕘 Aujourd'hui · 14:05 — Comparatif ordinateurs",
+            "🕘 Hier · 21:47 — Tutoriel Excel"
+          ]
+        }
+      },
+      {
+        "text": "Astuce bonus : fais un clic droit sur un onglet important et choisis *Épingler*. Il devient tout petit et reste toujours à gauche.",
+        "scene": {
+          "type": "text",
+          "emoji": "📌",
+          "title": "*Épingle* tes onglets clés",
+          "subtitle": "Clic droit › Épingler"
+        }
+      },
+      {
+        "text": "Trop d'onglets ouverts ? Un clic droit permet aussi de les *regrouper* dans Chrome et Edge pour y voir plus clair.",
+        "scene": {
+          "type": "text",
+          "emoji": "🗂️",
+          "title": "*Regroupe* tes onglets",
+          "subtitle": "Clic droit › Ajouter à un groupe"
+        }
+      },
+      {
+        "text": "Abonne-toi pour une astuce tech chaque jour, et dis-moi en commentaire le raccourci que tu utilises le plus.",
+        "scene": {
+          "type": "text",
+          "emoji": "🚀",
+          "title": "Abonne-toi pour la *suite*"
+        }
+      }
+    ],
+    "legende": "Le raccourci qui sauve la vie quand tu fermes un onglet par erreur 😅",
+    "hashtags": [
+      "#raccourciclavier",
+      "#astucetech",
+      "#chrome",
+      "#navigateur",
+      "#productivite",
+      "#astuceinformatique",
+      "#techtok"
+    ],
+    "a_verifier": [
+      "Ctrl + Maj + T rouvre le dernier onglet fermé dans Chrome, Firefox et Edge.",
+      "Des appuis successifs rouvrent les onglets fermés précédemment, du plus récent au plus ancien.",
+      "Dans Chrome et Edge, si le dernier élément fermé est une fenêtre, Ctrl + Maj + T rouvre la fenêtre avec ses onglets.",
+      "Sur Mac : Cmd + Maj + T.",
+      "Ctrl + H ouvre l'historique dans Chrome, Firefox et Edge.",
+      "Clic droit sur un onglet > « Épingler » existe dans Chrome, Firefox et Edge.",
+      "Groupes d'onglets : clic droit > « Ajouter l'onglet à un groupe » dans Chrome et Edge."
+    ]
+  },
+  {
+    "id": "windows-capture-ecran-win-maj-s",
+    "sujet": "Les captures d'écran précises sur Windows (Windows + Maj + S)",
+    "hook": "Arrête de faire tes *captures* *d'écran* comme ça.",
+    "segments": [
+      {
+        "text": "Sur Windows, la touche Impression écran capture tout ton écran d'un coup. Mais il existe un raccourci beaucoup plus *précis*.",
+        "scene": {
+          "type": "text",
+          "emoji": "🖥️",
+          "title": "Fini l'écran *entier*",
+          "subtitle": "Il y a bien plus précis"
+        }
+      },
+      {
+        "text": "Appuie sur *Windows*, *Majuscule* et *S* en même temps : l'écran s'assombrit et une petite barre d'outils apparaît en haut.",
+        "scene": {
+          "type": "shortcut",
+          "keys": [
+            "⊞ Win",
+            "Maj",
+            "S"
+          ],
+          "label": "L'outil Capture s'ouvre"
+        }
+      },
+      {
+        "text": "Tu choisis ton mode de capture : un *rectangle*, une *forme libre*, une fenêtre précise, ou tout l'écran si tu en as besoin.",
+        "scene": {
+          "type": "steps",
+          "title": "4 modes",
+          "items": [
+            "Rectangle",
+            "Forme libre",
+            "Fenêtre",
+            "Plein écran"
+          ]
+        }
+      },
+      {
+        "text": "Ta capture est copiée directement dans le *presse-papiers* : tu peux la coller tout de suite dans un message, un mail ou un document.",
+        "scene": {
+          "type": "text",
+          "emoji": "📋",
+          "title": "Direct dans le *presse-papiers*"
+        }
+      },
+      {
+        "text": "Clique sur la *notification* qui apparaît pour ouvrir l'Outil Capture : tu peux annoter, surligner, rogner, puis enregistrer ton image.",
+        "scene": {
+          "type": "screenshot",
+          "app": "Outil Capture",
+          "url": "Windows + Maj + S",
+          "lines": [
+            "✏️ Stylo à bille",
+            "🖍️ Surligneur",
+            "✂️ Rogner l'image"
+          ]
+        }
+      },
+      {
+        "text": "Sur Windows 11, tes captures sont aussi *enregistrées* automatiquement dans le dossier Images, sous-dossier Captures d'écran. Rien n'est perdu.",
+        "scene": {
+          "type": "text",
+          "emoji": "📁",
+          "title": "Sauvegarde *automatique*",
+          "subtitle": "Images › Captures d'écran"
+        }
+      },
+      {
+        "text": "Et toujours sur Windows 11, l'Outil Capture peut même *enregistrer* ton écran en *vidéo*, sans rien installer de plus sur ton PC.",
+        "scene": {
+          "type": "text",
+          "emoji": "🎥",
+          "title": "Il filme aussi ton *écran*",
+          "subtitle": "Windows 11"
+        }
+      },
+      {
+        "text": "Abonne-toi pour une astuce tech chaque jour, et dis-moi en commentaire quelle autre astuce Windows tu veux voir.",
+        "scene": {
+          "type": "text",
+          "emoji": "🚀",
+          "title": "Abonne-toi pour la *suite*"
+        }
+      }
+    ],
+    "legende": "Le vrai raccourci pour faire des captures d'écran propres sur Windows ✂️",
+    "hashtags": [
+      "#astucewindows",
+      "#windows11",
+      "#captureecran",
+      "#raccourciclavier",
+      "#astucetech",
+      "#productivite",
+      "#techtok"
+    ],
+    "a_verifier": [
+      "La touche Impression écran capture l'écran entier (sur Windows 11 récent, elle peut ouvrir l'Outil Capture selon les paramètres).",
+      "Windows + Maj + S ouvre la barre de capture (Windows 10 et 11).",
+      "Modes disponibles : rectangle, forme libre, fenêtre, plein écran.",
+      "La capture est copiée dans le presse-papiers.",
+      "La notification ouvre l'Outil Capture pour annoter, surligner, rogner et enregistrer.",
+      "Windows 11 : enregistrement automatique dans Images > Captures d'écran (option activée par défaut dans l'Outil Capture).",
+      "Windows 11 : l'Outil Capture permet l'enregistrement vidéo de l'écran."
+    ]
+  },
+  {
+    "id": "iphone-texte-en-direct",
+    "sujet": "Copier le texte d'une photo avec Texte en direct sur iPhone",
+    "hook": "Ton iPhone sait *lire* le texte de tes photos.",
+    "segments": [
+      {
+        "text": "Depuis iOS 15, une fonction appelée *Texte* *en* *direct* reconnaît le texte présent dans tes photos, et même dans l'appareil photo.",
+        "scene": {
+          "type": "text",
+          "emoji": "📸",
+          "title": "*Texte en direct*",
+          "subtitle": "Depuis iOS 15 · iPhone XS ou plus récent"
+        }
+      },
+      {
+        "text": "Ouvre une photo qui contient du texte, puis touche la petite *icône* de texte qui apparaît en bas à droite de l'image.",
+        "scene": {
+          "type": "steps",
+          "title": "Dans Photos",
+          "items": [
+            "Ouvre la photo",
+            "Touche l'icône Texte",
+            "Sélectionne le texte"
+          ]
+        }
+      },
+      {
+        "text": "Tout le texte devient *sélectionnable* : tu peux le copier, puis le coller dans une note, un message ou un mail, sans rien retaper.",
+        "scene": {
+          "type": "text",
+          "emoji": "📝",
+          "title": "*Copie* le texte d'une photo"
+        }
+      },
+      {
+        "text": "Ça marche aussi en direct : pointe ton *appareil* *photo* vers une affiche ou un document, puis touche l'icône de texte qui apparaît.",
+        "scene": {
+          "type": "screenshot",
+          "app": "Appareil photo",
+          "url": "Texte en direct",
+          "lines": [
+            "📄 « Réunion jeudi à 10 h, salle B »",
+            "✂️ Copier · Tout sélectionner",
+            "🌍 Traduire"
+          ]
+        }
+      },
+      {
+        "text": "Tu peux aussi *traduire* le texte détecté, par exemple un menu au restaurant ou un panneau quand tu voyages à l'étranger.",
+        "scene": {
+          "type": "text",
+          "emoji": "🌍",
+          "title": "*Traduis* un menu",
+          "subtitle": "En un toucher"
+        }
+      },
+      {
+        "text": "Et si c'est un numéro de téléphone, une adresse ou un site web, il suffit de le *toucher* pour appeler, ouvrir Plans ou le navigateur.",
+        "scene": {
+          "type": "text",
+          "emoji": "☎️",
+          "title": "Appelle en un *toucher*"
+        }
+      },
+      {
+        "text": "Si ça ne marche pas, vérifie dans Réglages, Général, Langue et région, que l'option Texte en direct est bien *activée*.",
+        "scene": {
+          "type": "steps",
+          "title": "Ça ne marche pas ?",
+          "items": [
+            "Réglages",
+            "Général › Langue et région",
+            "Active « Texte en direct »"
+          ]
+        }
+      },
+      {
+        "text": "Abonne-toi pour une astuce tech chaque jour, et dis-moi en commentaire quelle fonction cachée de l'iPhone tu veux découvrir.",
+        "scene": {
+          "type": "text",
+          "emoji": "🚀",
+          "title": "Abonne-toi pour la *suite*"
+        }
+      }
+    ],
+    "legende": "Ton iPhone peut copier le texte de n'importe quelle photo, tu le savais ? 📸",
+    "hashtags": [
+      "#astuceiphone",
+      "#iphone",
+      "#ios",
+      "#textenedirect",
+      "#astucetech",
+      "#apple",
+      "#techtok"
+    ],
+    "a_verifier": [
+      "Texte en direct (Live Text) est disponible depuis iOS 15.",
+      "Compatible avec les iPhone XS / XR et plus récents (puce A12 ou ultérieure).",
+      "Dans Photos, l'icône Texte en direct apparaît en bas à droite de l'image contenant du texte.",
+      "Le texte peut être sélectionné, copié et collé.",
+      "Fonctionne en direct dans l'app Appareil photo (icône de texte).",
+      "Le texte détecté peut être traduit.",
+      "Numéros, adresses et sites détectés sont interactifs (appel, Plans, navigateur).",
+      "Réglage : Réglages > Général > Langue et région > Texte en direct."
+    ]
+  },
+  {
+    "id": "android-entourer-pour-chercher",
+    "sujet": "Entourer pour chercher (Circle to Search) sur Android",
+    "hook": "Sur Android, *entoure* n'importe quoi pour le *chercher*.",
+    "segments": [
+      {
+        "text": "La fonction s'appelle *Entourer* *pour* *chercher*. Google l'a lancée début 2024, d'abord sur les Pixel 8 et les Galaxy S24.",
+        "scene": {
+          "type": "text",
+          "emoji": "⭕",
+          "title": "*Entourer* pour chercher",
+          "subtitle": "Lancée début 2024"
+        }
+      },
+      {
+        "text": "Pour l'utiliser, fais un *appui* *long* sur le bouton d'accueil, ou sur la barre de navigation en bas de ton écran.",
+        "scene": {
+          "type": "steps",
+          "title": "Comment faire",
+          "items": [
+            "Appui long sur Accueil",
+            "Entoure l'élément",
+            "Découvre les résultats"
+          ]
+        }
+      },
+      {
+        "text": "Ensuite, *entoure* avec ton doigt ce qui t'intéresse : un objet, un vêtement, un monument, un plat ou même un texte.",
+        "scene": {
+          "type": "text",
+          "emoji": "✍️",
+          "title": "*Entoure* avec ton doigt"
+        }
+      },
+      {
+        "text": "Google lance alors une recherche sur ta sélection, *sans* *quitter* l'application dans laquelle tu te trouves. Plus besoin de capture d'écran.",
+        "scene": {
+          "type": "screenshot",
+          "app": "Google",
+          "url": "google.com",
+          "lines": [
+            "👟 Baskets blanches en cuir — 12 résultats",
+            "🛍️ Où l'acheter",
+            "🖼️ Images similaires"
+          ]
+        }
+      },
+      {
+        "text": "Tu peux aussi simplement *toucher* un mot pour obtenir sa définition, ou ajouter une question pour préciser ta recherche.",
+        "scene": {
+          "type": "text",
+          "emoji": "🔎",
+          "title": "*Précise* ta recherche",
+          "subtitle": "Touche un mot ou pose une question"
+        }
+      },
+      {
+        "text": "Et elle sait *traduire* : un bouton de traduction permet de traduire tout ce qui est affiché à l'écran, sans changer d'application.",
+        "scene": {
+          "type": "text",
+          "emoji": "🌍",
+          "title": "*Traduis* tout l'écran"
+        }
+      },
+      {
+        "text": "Depuis son lancement, la fonction est arrivée sur de nombreux autres smartphones Android récents. Regarde si elle est disponible sur le tien.",
+        "scene": {
+          "type": "text",
+          "emoji": "📱",
+          "title": "Dispo sur ton *téléphone* ?",
+          "subtitle": "De nombreux Android récents"
+        }
+      },
+      {
+        "text": "Si rien ne se passe, vérifie dans les paramètres de ton téléphone que l'option est bien *activée*, souvent dans la rubrique navigation.",
+        "scene": {
+          "type": "steps",
+          "title": "Rien ne se passe ?",
+          "items": [
+            "Paramètres",
+            "Affichage ou navigation",
+            "Active « Entourer pour chercher »"
+          ]
+        }
+      },
+      {
+        "text": "Abonne-toi pour une astuce tech chaque jour, et dis-moi en commentaire ce que tu aimerais rechercher avec.",
+        "scene": {
+          "type": "text",
+          "emoji": "🚀",
+          "title": "Abonne-toi pour la *suite*"
+        }
+      }
+    ],
+    "legende": "Entoure n'importe quoi sur ton écran et Google te dit ce que c'est ⭕",
+    "hashtags": [
+      "#astuceandroid",
+      "#android",
+      "#google",
+      "#entourerpourchercher",
+      "#astucetech",
+      "#ia",
+      "#techtok"
+    ],
+    "a_verifier": [
+      "Nom français officiel : « Entourer pour chercher » (Circle to Search).",
+      "Lancée en janvier 2024 sur les Pixel 8 / 8 Pro et la gamme Galaxy S24.",
+      "Activation par appui long sur le bouton d'accueil ou la barre de navigation.",
+      "On peut entourer, surligner ou toucher un élément ; on peut ajouter du texte pour préciser.",
+      "La recherche se fait sans quitter l'application en cours.",
+      "Un bouton de traduction de l'écran est disponible.",
+      "Disponible depuis sur de nombreux autres smartphones Android (vérifier la formulation).",
+      "Emplacement du réglage (varie selon le fabricant)."
+    ]
+  },
+  {
+    "id": "whatsapp-transcription-vocaux",
+    "sujet": "Transcrire les messages vocaux WhatsApp en texte",
+    "hook": "Tu détestes écouter les *messages* *vocaux* ?",
+    "segments": [
+      {
+        "text": "Bonne nouvelle : WhatsApp peut les *transcrire* en texte. Tu les lis au lieu de les écouter, même en pleine réunion ou dans le métro.",
+        "scene": {
+          "type": "text",
+          "emoji": "💬",
+          "title": "Lis tes *vocaux*",
+          "subtitle": "Sans les écouter"
+        }
+      },
+      {
+        "text": "Pour l'activer, va dans les Paramètres de WhatsApp, puis Discussions, et active l'option *Transcriptions* des messages vocaux.",
+        "scene": {
+          "type": "steps",
+          "title": "Active-la",
+          "items": [
+            "Paramètres",
+            "Discussions",
+            "Transcriptions des messages vocaux"
+          ]
+        }
+      },
+      {
+        "text": "Choisis ensuite la *langue* de transcription parmi celles proposées. C'est à faire une seule fois, ensuite c'est réglé pour de bon.",
+        "scene": {
+          "type": "text",
+          "emoji": "🗣️",
+          "title": "Choisis ta *langue*"
+        }
+      },
+      {
+        "text": "Maintenant, fais un *appui* *long* sur un message vocal reçu, puis touche Transcrire : le texte s'affiche juste sous l'audio.",
+        "scene": {
+          "type": "screenshot",
+          "app": "WhatsApp",
+          "url": "Appui long › Transcrire",
+          "lines": [
+            "🎤 Message vocal · 0:47",
+            "📝 « Salut ! Je serai en retard ce soir, commence sans moi… »"
+          ]
+        }
+      },
+      {
+        "text": "Côté vie privée, WhatsApp indique que la transcription est générée *directement* sur ton téléphone, sans que personne d'autre y ait accès.",
+        "scene": {
+          "type": "text",
+          "emoji": "🔒",
+          "title": "Faite sur ton *téléphone*"
+        }
+      },
+      {
+        "text": "Attention quand même : si l'audio est bruité, ou si plusieurs langues sont mélangées, la transcription peut être *approximative*.",
+        "scene": {
+          "type": "text",
+          "emoji": "⚠️",
+          "title": "Parfois *approximative*",
+          "subtitle": "Bruit, langues mélangées…"
+        }
+      },
+      {
+        "text": "Et si tu préfères garder la surprise, tu peux toujours écouter le vocal normalement : la transcription ne remplace pas l'audio, elle s'ajoute.",
+        "scene": {
+          "type": "text",
+          "emoji": "🎧",
+          "title": "L'audio reste *disponible*"
+        }
+      },
+      {
+        "text": "Astuce bonus : pour réécouter un long vocal plus vite, touche le bouton de *vitesse* pendant la lecture pour passer en une fois et demie ou deux fois.",
+        "scene": {
+          "type": "stat",
+          "value": 2,
+          "prefix": "×",
+          "label": "vitesse de lecture max"
+        }
+      },
+      {
+        "text": "Abonne-toi pour une astuce tech chaque jour, et dis-moi en commentaire si tu es plutôt vocaux ou messages écrits.",
+        "scene": {
+          "type": "text",
+          "emoji": "🚀",
+          "title": "Abonne-toi pour la *suite*"
+        }
+      }
+    ],
+    "legende": "Plus besoin d'écouter les vocaux de 3 minutes : WhatsApp les transcrit pour toi 💬",
+    "hashtags": [
+      "#whatsapp",
+      "#astucewhatsapp",
+      "#messagesvocaux",
+      "#astucetech",
+      "#smartphone",
+      "#ia",
+      "#techtok"
+    ],
+    "a_verifier": [
+      "La transcription des messages vocaux est disponible dans WhatsApp (déploiement annoncé fin 2024).",
+      "Chemin : Paramètres > Discussions > Transcriptions des messages vocaux.",
+      "Choix de la langue de transcription (liste des langues selon Android / iOS).",
+      "Appui long sur un vocal > Transcrire ; le texte s'affiche sous l'audio.",
+      "WhatsApp indique que la transcription est générée sur l'appareil (chiffrement de bout en bout préservé).",
+      "Vitesses de lecture des vocaux : 1×, 1,5×, 2×."
+    ]
+  }
+]

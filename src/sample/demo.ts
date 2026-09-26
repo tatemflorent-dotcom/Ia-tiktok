@@ -89,6 +89,7 @@ const build = (): VideoProps => {
     words,
     scenes,
     audioSrc: null,
+    audioDelayMs: 0,
     musicSrc: null,
     musicVolume: 0.08,
     handle: "",

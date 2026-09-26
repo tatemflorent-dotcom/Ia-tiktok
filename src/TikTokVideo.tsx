@@ -10,7 +10,7 @@ import { SceneRenderer } from "./components/scenes/SceneRenderer";
 import { colors, FONT, safe } from "./theme";
 import { msToFrame } from "./lib/time";
 
-export const TikTokVideo: React.FC<VideoProps> = ({ hook, words, scenes, audioSrc, musicSrc, musicVolume, handle }) => {
+export const TikTokVideo: React.FC<VideoProps> = ({ hook, words, scenes, audioSrc, audioDelayMs, musicSrc, musicVolume, handle }) => {
   const { fps, durationInFrames } = useVideoConfig();
   const hookFrames = Math.max(1, msToFrame(hook.endMs, fps));
 
@@ -45,7 +45,11 @@ export const TikTokVideo: React.FC<VideoProps> = ({ hook, words, scenes, audioSr
 
       <ProgressBar />
 
-      {audioSrc ? <Audio src={staticFile(audioSrc)} /> : null}
+      {audioSrc ? (
+        <Sequence from={msToFrame(audioDelayMs, fps)} name="Voix off" layout="none">
+          <Audio src={staticFile(audioSrc)} />
+        </Sequence>
+      ) : null}
       {musicSrc ? <Audio src={staticFile(musicSrc)} volume={musicVolume} loop /> : null}
     </AbsoluteFill>
   );

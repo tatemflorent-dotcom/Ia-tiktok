@@ -7,7 +7,9 @@
     "studio": "remotion studio src/index.ts",
     "render": "remotion render src/index.ts",
     "still": "remotion still src/index.ts",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "produce": "python3 -m pipeline.produce",
+    "setup": "pip3 install -r requirements.txt"
   },
   "dependencies": {
     "@remotion/cli": "4.0.529",

@@ -86,6 +86,8 @@ export const videoSchema = z.object({
   scenes: z.array(sceneSchema),
   /** Voix off, relative à public/ (ex: "generated/ma-video/voice.mp3"). */
   audioSrc: z.string().nullable().default(null),
+  /** Décalage de la voix off (ms), pour que l'accroche dure au moins 3 s. */
+  audioDelayMs: z.number().min(0).default(0),
   /** Musique de fond optionnelle, relative à public/. */
   musicSrc: z.string().nullable().default(null),
   musicVolume: z.number().min(0).max(1).default(0.08),
