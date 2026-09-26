@@ -8,7 +8,7 @@ import re
 import subprocess
 from pathlib import Path
 
-from .config import ROOT
+from .config import NPX, ROOT
 from .history import normalize
 
 
@@ -47,7 +47,7 @@ def synthesize(text: str, voice: str, rate_pct: int, out_mp3: Path) -> list[dict
 def audio_duration_ms(path: Path) -> float:
     """Durée réelle du MP3 via le ffprobe embarqué dans Remotion."""
     out = subprocess.run(
-        ["npx", "remotion", "ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
+        [NPX, "remotion", "ffprobe", "-v", "error", "-show_entries", "format=duration", "-of", "csv=p=0", str(path)],
         cwd=ROOT, capture_output=True, text=True, check=True,
     ).stdout.strip().splitlines()
     return float(out[-1]) * 1000

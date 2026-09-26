@@ -23,7 +23,7 @@ from pathlib import Path
 
 from . import history, tts
 from .config import (
-    DEFAULT_VOICE, DURATION_MAX_S, DURATION_MIN_S, DURATION_TARGET_S, GENERATED_DIR, HOOK_MIN_MS,
+    DEFAULT_VOICE, NPX, load_env_file, DURATION_MAX_S, DURATION_MIN_S, DURATION_TARGET_S, GENERATED_DIR, HOOK_MIN_MS,
     MAX_RATE, MIN_RATE, OUTPUT_DIR, ROOT, SCENE_MAX_S, SCENE_MIN_S, TAIL_MS,
 )
 from .script import Script, pick_script, plain, word_count
@@ -128,7 +128,7 @@ def build_props(s: Script, timed: list[dict], audio_src: str | None, audio_ms: f
 
 
 def render(props_file: Path, out_mp4: Path) -> None:
-    cmd = ["npx", "remotion", "render", "src/index.ts", "TikTokVideo", str(out_mp4), f"--props={props_file}", "--log=error"]
+    cmd = [NPX, "remotion", "render", "src/index.ts", "TikTokVideo", str(out_mp4), f"--props={props_file}", "--log=error"]
     subprocess.run(cmd, cwd=ROOT, check=True)
 
 
@@ -189,6 +189,7 @@ def produce_one(s: Script, args) -> Path:
 
 
 def main(argv: list[str] | None = None) -> None:
+    load_env_file()
     p = argparse.ArgumentParser(description="Produit N vidéos TikTok prêtes à publier.")
     p.add_argument("n", nargs="?", type=int, default=1, help="nombre de vidéos (défaut : 1)")
     p.add_argument("--source", choices=["auto", "banque", "claude"], default="auto",

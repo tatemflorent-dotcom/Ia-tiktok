@@ -41,6 +41,51 @@ Chaque vidéo arrive dans `output/<date>_<sujet>/` :
 | `voix.mp3` | la voix off seule |
 | `props.json` | les données Remotion (pour re-rendre ou retoucher dans le Studio) |
 
+## Automatiser sur ton ordinateur
+
+### 1. Installation (une seule fois)
+
+Installe [Node.js](https://nodejs.org) (version LTS) et [Python 3](https://www.python.org/downloads/)
+(sur Windows, coche « Add Python to PATH »), puis dans un terminal :
+
+```bash
+git clone https://github.com/tatemflorent-dotcom/Ia-tiktok.git
+cd Ia-tiktok
+git checkout claude/tiktok-ia-remotion-production-krxw3n
+npm install
+npm run setup                 # Windows : pip install -r requirements.txt
+cp .env.example .env          # Windows : copy .env.example .env
+```
+
+Ouvre `.env` et règle `NB_VIDEOS`, `VOIX` et, si tu veux des sujets illimités, `ANTHROPIC_API_KEY`
+(sans clé, la banque contient 6 sujets : de quoi tenir une semaine).
+
+Test manuel : `./scripts/production.sh` (Mac/Linux) ou double-clic sur `scripts\production.bat` (Windows).
+Le premier rendu télécharge Chrome automatiquement (une fois).
+
+### 2. Programmer une production chaque jour
+
+**Mac / Linux (cron)** — `crontab -e` puis ajoute (tous les jours à 7 h) :
+
+```
+0 7 * * * /chemin/vers/Ia-tiktok/scripts/production.sh
+```
+
+> Mac : autorise le « Terminal » et `cron` dans Réglages › Confidentialité et sécurité › Accès complet au disque
+> si le projet est dans Documents/Bureau. L'ordinateur doit être allumé (ou utilise
+> `pmset repeat wakeorpoweron MTWRFSU 06:55:00` pour le réveiller).
+
+**Windows (Planificateur de tâches)** — dans PowerShell :
+
+```powershell
+schtasks /Create /TN "TikTok IA" /SC DAILY /ST 07:00 /TR "\"C:\chemin\vers\Ia-tiktok\scripts\production.bat\""
+```
+
+(ou Planificateur de tâches › Créer une tâche de base › Quotidienne › Démarrer un programme › `production.bat`).
+
+Chaque matin, les nouvelles vidéos t'attendent dans `output/`, avec leur journal dans `logs/`.
+Il ne te reste qu'à relire `a_verifier.md` et publier.
+
 ### Scripts (étape 3)
 
 - **Avec `ANTHROPIC_API_KEY`** : un sujet nouveau est généré par Claude à chaque vidéo

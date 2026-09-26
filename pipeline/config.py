@@ -1,5 +1,10 @@
 """Réglages du pipeline de production."""
+import os
+import sys
 from pathlib import Path
+
+# Sur Windows, npx est un script .cmd
+NPX = "npx.cmd" if sys.platform == "win32" else "npx"
 
 ROOT = Path(__file__).resolve().parent.parent
 PUBLIC_DIR = ROOT / "public"
@@ -25,3 +30,16 @@ TAIL_MS = 1200  # respiration après le dernier mot
 CLAUDE_MODEL = "claude-opus-5"
 
 SCENE_TYPES = ("text", "screenshot", "shortcut", "steps", "stat")
+
+
+def load_env_file() -> None:
+    """Charge le fichier .env à la racine (utile pour les tâches planifiées, qui n'ont pas tes variables)."""
+    env = ROOT / ".env"
+    if not env.exists():
+        return
+    for line in env.read_text(encoding="utf-8").splitlines():
+        line = line.strip()
+        if not line or line.startswith("#") or "=" not in line:
+            continue
+        key, value = line.split("=", 1)
+        os.environ.setdefault(key.strip(), value.strip().strip('"').strip("'"))
