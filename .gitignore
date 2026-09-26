@@ -1,0 +1,10 @@
+node_modules/
+out/
+output/
+.remotion/
+__pycache__/
+*.pyc
+.venv/
+.env
+# Fichiers audio/sous-titres générés pour le rendu (copiés dans output/)
+public/generated/
